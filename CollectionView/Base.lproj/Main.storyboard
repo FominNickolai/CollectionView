@@ -58,6 +58,7 @@
                                 <connections>
                                     <outlet property="iconImageView" destination="P14-AF-SzO" id="3Nf-xW-O9R"/>
                                     <outlet property="iconPriceLabel" destination="usD-JF-FMY" id="T7V-3H-qsK"/>
+                                    <segue destination="5VQ-Ex-tfg" kind="presentation" identifier="showIconDetail" id="r0a-yX-dkI"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -72,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="439.19999999999999" y="109.29535232383809"/>
         </scene>
-        <!--View Controller-->
+        <!--Icon Detail View Controller-->
         <scene sceneID="GUi-1m-zNG">
             <objects>
-                <viewController id="5VQ-Ex-tfg" sceneMemberID="viewController">
+                <viewController id="5VQ-Ex-tfg" customClass="IconDetailViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w42-q6-eGm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +129,9 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="0.3972870255" blue="0.124561676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="vfG-Lt-kHi" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="4FR-kd-hEG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,8 +151,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y3g-ks-cSM"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="M8F-Nh-pOp" id="nJ2-yt-LgS"/>
+                        <outlet property="iconImageView" destination="uBb-jH-bUG" id="yhE-sG-Hb2"/>
+                        <outlet property="nameLabel" destination="1Zp-uA-t1F" id="KVG-rZ-9AO"/>
+                        <outlet property="priceLAbel" destination="f5m-Ql-cro" id="HAi-Gp-3ip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Nh-bZ-oBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vfG-Lt-kHi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1200.8" y="108.39580209895054"/>
         </scene>

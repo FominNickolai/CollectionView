@@ -14,6 +14,7 @@
 		B76048091F31C59200AB84A5 /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76048081F31C59200AB84A5 /* IconCollectionViewCell.swift */; };
 		B760480B1F31C5A500AB84A5 /* IconCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760480A1F31C5A500AB84A5 /* IconCollectionViewController.swift */; };
 		B760480D1F31C6A600AB84A5 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760480C1F31C6A600AB84A5 /* Icon.swift */; };
+		B760480F1F31D14A00AB84A5 /* IconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760480E1F31D14A00AB84A5 /* IconDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B76048081F31C59200AB84A5 /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
 		B760480A1F31C5A500AB84A5 /* IconCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewController.swift; sourceTree = "<group>"; };
 		B760480C1F31C6A600AB84A5 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		B760480E1F31D14A00AB84A5 /* IconDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				B76047F61F31BFC700AB84A5 /* AppDelegate.swift */,
 				B76048081F31C59200AB84A5 /* IconCollectionViewCell.swift */,
 				B760480A1F31C5A500AB84A5 /* IconCollectionViewController.swift */,
+				B760480E1F31D14A00AB84A5 /* IconDetailViewController.swift */,
 				B760480C1F31C6A600AB84A5 /* Icon.swift */,
 				B76047FA1F31BFC700AB84A5 /* Main.storyboard */,
 				B76047FD1F31BFC700AB84A5 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				B76047F71F31BFC700AB84A5 /* AppDelegate.swift in Sources */,
 				B760480B1F31C5A500AB84A5 /* IconCollectionViewController.swift in Sources */,
 				B760480D1F31C6A600AB84A5 /* Icon.swift in Sources */,
+				B760480F1F31D14A00AB84A5 /* IconDetailViewController.swift in Sources */,
 				B76048091F31C59200AB84A5 /* IconCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,7 +61,7 @@ class IconCollectionViewController: UICollectionViewController {
     
         // Configure the cell
         let icon = iconSet[indexPath.row]
-        cell.iconImageView.image = UIImage(named: icon.name)
+        cell.iconImageView.image = UIImage(named: icon.imageName)
         cell.iconPriceLabel.text = "$\(icon.price)"
         cell.backgroundView = icon.isFeatured ? UIImageView(image: UIImage(named: "feature-bg")) : nil
         
@@ -98,5 +98,10 @@ class IconCollectionViewController: UICollectionViewController {
     
     }
     */
+    
+    //MARK: - Segues
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        
+    }
 
 }
