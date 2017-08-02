@@ -103,5 +103,36 @@ class IconCollectionViewController: UICollectionViewController {
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showIconDetail" {
+            if let indexPaths = collectionView?.indexPathsForSelectedItems {
+                let destinationController = segue.destination as! IconDetailViewController
+                destinationController.icon = iconSet[indexPaths[0].row]
+                collectionView?.deselectItem(at: indexPaths[0], animated: true)
+            }
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
