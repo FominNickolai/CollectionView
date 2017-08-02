@@ -11,11 +11,15 @@ import Foundation
 struct Icon {
     var name = ""
     var price = 0.0
+    var imageName = ""
+    var description = ""
     var isFeatured = false
     
-    init(name: String, price: Double, isFeatured: Bool) {
+    init(name: String, imageName: String, description: String, price: Double, isFeatured: Bool) {
         self.name = name
         self.price = price
+        self.imageName = imageName
+        self.description = description
         self.isFeatured = isFeatured
     }
 }

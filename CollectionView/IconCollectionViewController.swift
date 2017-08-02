@@ -64,7 +64,8 @@ class IconCollectionViewController: UICollectionViewController {
         let icon = iconSet[indexPath.row]
         cell.iconImageView.image = UIImage(named: icon.name)
         cell.iconPriceLabel.text = "$\(icon.price)"
-    
+        cell.backgroundView = icon.isFeatured ? UIImageView(image: UIImage(named: "feature-bg")) : nil
+        
         return cell
     }
 
