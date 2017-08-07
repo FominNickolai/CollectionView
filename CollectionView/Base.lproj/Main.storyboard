@@ -67,7 +67,16 @@
                             <outlet property="delegate" destination="DV9-QJ-Z2H" id="gax-fd-bDJ"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Icon Store" id="llL-Xm-gj3"/>
+                    <navigationItem key="navigationItem" title="Icon Store" id="llL-Xm-gj3">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="qMN-Xc-sJw">
+                            <connections>
+                                <action selector="shareButtonTappedWithSender:" destination="DV9-QJ-Z2H" id="gGl-YB-hrT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shareButton" destination="qMN-Xc-sJw" id="aFE-MZ-jNZ"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVo-V5-ckf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

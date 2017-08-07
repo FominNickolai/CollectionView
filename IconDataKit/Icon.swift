@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct Icon {
-    var name = ""
-    var price = 0.0
-    var imageName = ""
-    var description = ""
-    var isFeatured = false
+public struct Icon {
+    public var name = ""
+    public var price = 0.0
+    public var imageName = ""
+    public var description = ""
+    public var isFeatured = false
     
-    init(name: String, imageName: String, description: String, price: Double, isFeatured: Bool) {
+    public init(name: String, imageName: String, description: String, price: Double, isFeatured: Bool) {
         self.name = name
         self.price = price
         self.imageName = imageName
@@ -23,3 +23,4 @@ struct Icon {
         self.isFeatured = isFeatured
     }
 }
+

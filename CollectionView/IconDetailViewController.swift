@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IconDataKit
 
 class IconDetailViewController: UIViewController {
     
