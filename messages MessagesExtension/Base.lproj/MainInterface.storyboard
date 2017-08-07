@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-181" y="67"/>
         </scene>
-        <!--View Controller-->
+        <!--Icon Detail View Controller-->
         <scene sceneID="srI-5R-LcN">
             <objects>
-                <viewController id="PiI-h0-hqL" sceneMemberID="viewController">
+                <viewController id="PiI-h0-hqL" customClass="IconDetailViewController" customModule="messages_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WwO-O0-dMG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
