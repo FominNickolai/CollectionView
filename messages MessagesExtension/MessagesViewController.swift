@@ -15,6 +15,7 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var iconSet = IconData.iconSet
+    var selectedIcon: Icon?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,14 @@ class MessagesViewController: MSMessagesAppViewController {
         // This will happen when the extension is about to present UI.
         
         // Use this method to configure the extension and restore previously stored state.
+        guard presentationStyle == .expanded else {
+            dismiss(animated: true, completion: nil)
+            return
+        }
+        
+        if let selectedMessage = conversation.selectedMessage {
+            presentIconDetails(message: selectedMessage)
+        }
     }
     
     override func didResignActive(with conversation: MSConversation) {
@@ -66,12 +75,37 @@ class MessagesViewController: MSMessagesAppViewController {
         // Called before the extension transitions to a new presentation style.
     
         // Use this method to prepare for the change in presentation style.
+        if presentationStyle == .compact {
+            dismiss(animated: true, completion: nil)
+            return
+        }
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called after the extension transitions to a new presentation style.
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
+    }
+    
+    override func didSelect(_ message: MSMessage, conversation: MSConversation) {
+        guard let selectedMessage = conversation.selectedMessage else {
+            return
+        }
+        presentIconDetails(message: selectedMessage)
+    }
+    
+    //Methods
+    func presentIconDetails(message: MSMessage) {
+        selectedIcon = Icon(message: message)
+        performSegue(withIdentifier: "IconDetail", sender: self)
+    }
+    
+    //Segues
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier, identifier == "IconDetail" {
+            let destinationController = segue.destination as! IconDetailMessageViewController
+            destinationController.icon = selectedIcon
+        }
     }
 
 }
