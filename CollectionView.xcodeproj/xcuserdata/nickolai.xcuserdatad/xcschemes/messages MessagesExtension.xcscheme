@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+<<<<<<< HEAD
    LastUpgradeVersion = "0900"
+=======
+   LastUpgradeVersion = "0830"
+>>>>>>> e1a871927edb2d4282cc29d2cd861cb8d165ebfa
    wasCreatedForAppExtension = "YES"
    version = "2.0">
    <BuildAction
@@ -41,7 +45,10 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+<<<<<<< HEAD
       language = ""
+=======
+>>>>>>> e1a871927edb2d4282cc29d2cd861cb8d165ebfa
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -61,7 +68,10 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
+<<<<<<< HEAD
       language = ""
+=======
+>>>>>>> e1a871927edb2d4282cc29d2cd861cb8d165ebfa
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
