@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-181" y="67"/>
         </scene>
-        <!--View Controller-->
+        <!--Icon Detail Message View Controller-->
         <scene sceneID="srI-5R-LcN">
             <objects>
-                <viewController id="PiI-h0-hqL" sceneMemberID="viewController">
+                <viewController id="PiI-h0-hqL" customClass="IconDetailMessageViewController" customModule="messages_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WwO-O0-dMG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +192,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O10-bg-eZ0"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="LII-Ha-xop" id="5Ft-1Z-8Wg"/>
+                        <outlet property="iconImageView" destination="fj5-F5-Rof" id="mrv-fV-vZD"/>
+                        <outlet property="nameLabel" destination="XQu-MB-J2R" id="RFB-U0-yMR"/>
+                        <outlet property="priceLabel" destination="UIQ-kY-NlG" id="FCd-eZ-Glk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eq8-hk-D06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
