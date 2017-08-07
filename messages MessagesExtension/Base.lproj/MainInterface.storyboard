@@ -113,11 +113,11 @@
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
                         <outlet property="tableView" destination="Yxg-Sl-3Wv" id="60S-oX-S2i"/>
-                        <segue destination="PiI-h0-hqL" kind="presentation" identifier="IconDetail" id="keL-Tm-P1n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-181" y="67"/>
         </scene>
         <!--Icon Detail View Controller-->
@@ -196,6 +196,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eq8-hk-D06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="537" y="129"/>
+=======
+            <point key="canvasLocation" x="144" y="90"/>
+>>>>>>> parent of 6767288... Added DetailViewController to storyboard of message extension.
         </scene>
     </scenes>
 </document>
