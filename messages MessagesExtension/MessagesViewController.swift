@@ -8,8 +8,13 @@
 
 import UIKit
 import Messages
+import IconDataKit
 
 class MessagesViewController: MSMessagesAppViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    private var iconSet = IconData.iconSet
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,3 +75,71 @@ class MessagesViewController: MSMessagesAppViewController {
     }
 
 }
+
+extension MessagesViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return iconSet.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! IconTableViewCell
+        let icon = iconSet[indexPath.row]
+        cell.nameLabel.text = icon.name
+        cell.descriptionLabel.text = icon.description
+        cell.priveLabel.text = "$\(icon.price)"
+        cell.iconImageView.image = UIImage(named: icon.imageName)
+        return cell
+    }
+}
+
+extension MessagesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        requestPresentationStyle(.compact)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let icon = iconSet[indexPath.row]
+        if let converation = activeConversation {
+            let messageLayout = MSMessageTemplateLayout()
+            messageLayout.caption = icon.name
+            messageLayout.subcaption = "$\(icon.price)"
+            messageLayout.image = UIImage(named: icon.imageName)
+            let message = MSMessage()
+            message.layout = messageLayout
+            if var components = URLComponents(string: "http://giraffe.in.ua") {
+                components.queryItems = icon.queryItems
+                message.url = components.url
+            }
+            
+            converation.insert(message, completionHandler: { (error) in
+                if let error = error {
+                    print(error)
+                }
+            })
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,6 +25,9 @@
 		B76048091F31C59200AB84A5 /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76048081F31C59200AB84A5 /* IconCollectionViewCell.swift */; };
 		B760480B1F31C5A500AB84A5 /* IconCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760480A1F31C5A500AB84A5 /* IconCollectionViewController.swift */; };
 		B760480F1F31D14A00AB84A5 /* IconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760480E1F31D14A00AB84A5 /* IconDetailViewController.swift */; };
+		B7EE17F11F384E5000482697 /* IconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EE17F01F384E5000482697 /* IconTableViewCell.swift */; };
+		B7EE17F21F38506F00482697 /* IconDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71C5F3A1F38495D00E2B6D1 /* IconDataKit.framework */; };
+		B7EE17F31F38514000482697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76047FD1F31BFC700AB84A5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,7 @@
 		B76048081F31C59200AB84A5 /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
 		B760480A1F31C5A500AB84A5 /* IconCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewController.swift; sourceTree = "<group>"; };
 		B760480E1F31D14A00AB84A5 /* IconDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDetailViewController.swift; sourceTree = "<group>"; };
+		B7EE17F01F384E5000482697 /* IconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EE17F21F38506F00482697 /* IconDataKit.framework in Frameworks */,
 				B71C5F051F3844B700E2B6D1 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +156,7 @@
 				B71C5F091F3844B700E2B6D1 /* MainInterface.storyboard */,
 				B71C5F0C1F3844B700E2B6D1 /* Assets.xcassets */,
 				B71C5F0E1F3844B700E2B6D1 /* Info.plist */,
+				B7EE17F01F384E5000482697 /* IconTableViewCell.swift */,
 			);
 			path = "messages MessagesExtension";
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71C5F0D1F3844B700E2B6D1 /* Assets.xcassets in Resources */,
+				B7EE17F31F38514000482697 /* Assets.xcassets in Resources */,
 				B71C5F0B1F3844B700E2B6D1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EE17F11F384E5000482697 /* IconTableViewCell.swift in Sources */,
 				B71C5F081F3844B700E2B6D1 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
